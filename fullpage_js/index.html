@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://html5-templates.com/" />
+    <title>HTML Template - Full Page Slider Navigation</title>
+    <meta name="description" content="A brief page description">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+              sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+              anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+              menu: '#menu',
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+
+<ul id="menu">
+    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Main</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Terms</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">Thank you</a></li>
+</ul>
+
+<div id="fullpage">
+    <div class="section " id="section0">
+        <h1>Learning Real Estate</h1>
+        <p>Scroll Down To Change Slide</p>
+        <p class="introimg">&darr;&#9636;&darr;</p>
+    </div>
+    <div class="section active" id="section1">
+        <div class="slide" id="slide1">
+            <div class="intro">
+                <h1>Terms</h1>
+                <p>Click left or right to see the terms to help you understand how to be a real estate guru</p>
+            </div>
+        </div>
+        <div class="slide active" id="slide2">
+            <h1>Cash Flow</h1>
+			<p>At a very basic level, this is simply your <b>income</b> minus your <b>expenses</b></p>
+            <ul>
+                <li>If your rental income is $1000 and your expenses are $800 a month, then your cash flow is $200 a month </li>
+            </ul>
+        </div>
+        <div class="slide" id="slide3">
+            <h1>Cash on Cash Return</h1>
+            <p>Cash on Cash Return (COCR), is the amount of money  <b>income</b> minus your <b>expenses</b></p>
+            <ul>
+                <li>If your cash flow is $200 a month, then your annual cash flow is $2400 a year ($240*12 months), assuming you put $20,000, your COCR is $2400/$20,000 or 12% </li>
+            </ul>
+        </div>
+        <div class="slide" id="slide4">
+            <h1>Cap Rate</h1>
+            <p>In math terms, it is the NOI divided by the value of the property</p>
+            <ul>If a property is worth $1 million and the NOI is $100,000 a year, the cap rate is 10% </ul>
+        </div>
+        <div class="slide" id="slide5">
+            <h1>Net Operating Income</h1>
+            <p>Net operating income, also known as NOI is the total income minus total expenses. <b>NOTE:</b> different from cash flow in that it doesn't include mortgage in its calculations</p>
+            <ul>It is assuming that the house is fully paid off. NOI of a property with $1000 in income and $200 in expenses, the NOI will be $800 a month </ul>
+        </div>
+
+    </div>
+    <div class="section" id="section2">
+        <div class="intro">
+            <h1>Thank you for learning</h1>
+            <p>Please do more research and continue learning about real estate investing in your future</p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
